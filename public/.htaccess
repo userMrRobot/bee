@@ -1,0 +1,6 @@
+
+RewriteEngine On
+#если текущ запрос не идет на файл который есть в дериктории public тогда отправляй все на index.php
+#иначе если на файл стилей или js тогда перенаправление не делай
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*) index.php?/$1 [L,QSA]

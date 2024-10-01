@@ -12,7 +12,7 @@ var_dump($_SESSION);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <title>Личный кабинет</title>
 </head>
 <body data-vide-bg="video\6872489-hd_1920_1080_25fps.mp4 ">
@@ -162,7 +162,7 @@ var_dump($_SESSION);
                 <div class="carts-bdj">
                     <div class="cart-bdj">
                         <div class="cart-bdj-img">
-                            <img src="img/cart1.png" alt="пчела-рабочая">
+                            <img src="../public/img/cart1.png" alt="пчела-рабочая">
                         </div>
                         <div class="cart-bdj-p">
                             <p>пчела-рабочая </p>
@@ -174,7 +174,7 @@ var_dump($_SESSION);
 
                     <div class="cart-bdj">
                         <div class="cart-bdj-img">
-                            <img src="img/cart1.png" alt="пчела трутень">
+                            <img src="../public/img/cart1.png" alt="пчела трутень">
                         </div>
                         <div class="cart-bdj-p">
                             <p>пчела трутень</p>
@@ -188,7 +188,7 @@ var_dump($_SESSION);
 
                     <div class="cart-bdj">
                         <div class="cart-bdj-img">
-                            <img src="img/cart1.png" alt="матка">
+                            <img src="../public/img/cart1.png" alt="матка">
                         </div>
                         <div class="cart-bdj-p">
                             <p>пчела матка</p>

@@ -1,62 +1,15 @@
-<?php
-
-
-?>
 
 <?php
 session_start();
 var_dump($_SESSION);
+require '../function.php';
+require '../config/config.php';
 
-
-
+require TPL . '/header.tpl.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Регистрация</title>
-</head>
-<body >
-<!-- header -->
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Логотип</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">О сайте</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Правила</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ">
-                    <li class="nav-item dropdown me">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Меню
-                        </a>
 
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../view/register.view.php">Регистрация</a></li>
-                            <li><a class="dropdown-item" href="../index.php">Войти</a></li>
-
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-</header>
 
 
 <!-- main -->
@@ -68,7 +21,7 @@ var_dump($_SESSION);
             <!-- секция с видео -->
             <div class="col-md-12">
                 <div style="padding:10px; font-size:30px; text-align:center; color: #000306">
-                    <img src="../img/pexels-chuanyu2015-209658-2231469.jpg" width="auto" height="500px" alt="">
+                    <img src="../../../public/img/pexels-chuanyu2015-209658-2231469.jpg" width="auto" height="500px" alt="">
                 </div>
             </div>
             <!-- секция с формой статическая-->
@@ -77,7 +30,7 @@ var_dump($_SESSION);
                     <div class="form-osnova">
                         <div class="header-form"><h4 style="color: #000306;">Вход в акаунт</h4></div>
 
-                        <form action="../forma.php" method="post" class="forma-osn">
+                        <form action="../../controllers/login.php" method="post" class="forma-osn">
                             <div class="form-group">
                                 <label class="label-form" for="exampleInputEmail1">Введите логин</label>
                                 <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
@@ -88,7 +41,7 @@ var_dump($_SESSION);
                             </div>
                             <div class="button-link">
                                 <button type="submit" class="btn btn-success btn-reg">Войти</button>
-                                <a type="submit" href="../register.php" class="btn btn-success btn-a btn-reg">Регестрируй</a>
+                                <a type="submit" href="../../controllers/register.php" class="btn btn-success btn-a btn-reg">Регестрируй</a>
                             </div>
                             <div class="reg">
                                 <p>нет акаунта?скорее </p>
@@ -163,7 +116,7 @@ var_dump($_SESSION);
                                 <?php unset($_SESSION['warn']) ?>
                             </div>
                         <?php endif; ?>
-                        <form action="../register.php" method="post" class="forma-osn">
+                        <form action="../../controllers/register.php" method="post" class="forma-osn">
                             <div class="form-group">
                                 <label class="label-form" for="exampleInputEmail1">Введите логин</label>
                                 <input type="text" name="login" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
@@ -192,15 +145,7 @@ var_dump($_SESSION);
     </div>
 </main>
 
-<!-- footer -->
-<footer>
-
-
-
-</footer>
-
-<script src="http://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-<script src="http://atuin.ru/demo/vide/jquery.vide.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+<?php
+//footer
+require TPL .  '/footer.tpl.php';
+?>

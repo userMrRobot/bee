@@ -6,7 +6,7 @@ body{
     left: auto;
 }
 .osnov_img{
-    background: url('img/pexels-chuanyu2015-209658-2231469.jpg');
+    background: url('../img/pexels-chuanyu2015-209658-2231469.jpg');
 }
 
 .form-group{
