@@ -4,160 +4,115 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit760610032df70170a90c0aed4bb902c8
+class ComposerStaticInit6f3378bcf9ae8c70fa733296c713683a
 {
     public static $files = array (
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
-        '1f87db08236948d07391152dccb70f04' => __DIR__ . '/..' . '/google/apiclient-services/autoload.php',
-        'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
-        'a8d3953fd9959404dd22d3dfcd0a79f0' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
+        '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'p' => 
+        'c' => 
         array (
-            'phpseclib3\\' => 11,
+            'classes\\' => 8,
         ),
-        'V' => 
+        'Y' => 
         array (
-            'VK\\' => 3,
+            'YooKassa\\Validator\\' => 19,
+            'YooKassa\\' => 9,
         ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
-            'Psr\\Http\\Message\\' => 17,
-            'Psr\\Http\\Client\\' => 16,
-            'Psr\\Cache\\' => 10,
-            'ParagonIE\\ConstantTime\\' => 23,
         ),
-        'M' => 
+        'K' => 
         array (
-            'Monolog\\' => 8,
-        ),
-        'L' => 
-        array (
-            'LeXxyIT\\YoutubeTransfer\\' => 24,
-            'LeXxyIT\\EnvParser\\' => 18,
-        ),
-        'G' => 
-        array (
-            'GuzzleHttp\\Psr7\\' => 16,
-            'GuzzleHttp\\Promise\\' => 19,
-            'GuzzleHttp\\' => 11,
-            'Google\\Service\\' => 15,
-            'Google\\Auth\\' => 12,
-            'Google\\' => 7,
+            'Kint\\' => 5,
         ),
         'F' => 
         array (
-            'Firebase\\JWT\\' => 13,
+            'FastRoute\\' => 10,
+        ),
+        'D' => 
+        array (
+            'Ds\\' => 3,
+            'Delight\\Http\\' => 13,
+            'Delight\\Db\\' => 11,
+            'Delight\\Cookie\\' => 15,
+            'Delight\\Base64\\' => 15,
+            'Delight\\Auth\\' => 13,
+        ),
+        'A' => 
+        array (
+            'Aura\\SqlQuery\\' => 14,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'phpseclib3\\' => 
+        'classes\\' => 
         array (
-            0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+            0 => __DIR__ . '/../..' . '/core/classes',
         ),
-        'VK\\' => 
+        'YooKassa\\Validator\\' => 
         array (
-            0 => __DIR__ . '/..' . '/vkcom/vk-php-sdk/src/VK',
+            0 => __DIR__ . '/..' . '/yoomoney/yookassa-sdk-validator/src',
+        ),
+        'YooKassa\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yoomoney/yookassa-sdk-php/lib',
         ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
         ),
-        'Psr\\Http\\Message\\' => 
+        'Kint\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/kint-php/kint/src',
         ),
-        'Psr\\Http\\Client\\' => 
+        'FastRoute\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-client/src',
+            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
-        'Psr\\Cache\\' => 
+        'Ds\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/cache/src',
+            0 => __DIR__ . '/..' . '/php-ds/php-ds/src',
         ),
-        'ParagonIE\\ConstantTime\\' => 
+        'Delight\\Http\\' => 
         array (
-            0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
+            0 => __DIR__ . '/..' . '/delight-im/http/src',
         ),
-        'Monolog\\' => 
+        'Delight\\Db\\' => 
         array (
-            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+            0 => __DIR__ . '/..' . '/delight-im/db/src',
         ),
-        'LeXxyIT\\YoutubeTransfer\\' => 
+        'Delight\\Cookie\\' => 
         array (
-            0 => __DIR__ . '/..' . '/lexxyit/youtube-transfer/src',
+            0 => __DIR__ . '/..' . '/delight-im/cookie/src',
         ),
-        'LeXxyIT\\EnvParser\\' => 
+        'Delight\\Base64\\' => 
         array (
-            0 => __DIR__ . '/..' . '/lexxyit/env-parser/src',
+            0 => __DIR__ . '/..' . '/delight-im/base64/src',
         ),
-        'GuzzleHttp\\Psr7\\' => 
+        'Delight\\Auth\\' => 
         array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+            0 => __DIR__ . '/..' . '/delight-im/auth/src',
         ),
-        'GuzzleHttp\\Promise\\' => 
+        'Aura\\SqlQuery\\' => 
         array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
-        ),
-        'GuzzleHttp\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
-        ),
-        'Google\\Service\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/google/apiclient-services/src',
-        ),
-        'Google\\Auth\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/google/auth/src',
-        ),
-        'Google\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/google/apiclient/src',
-        ),
-        'Firebase\\JWT\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
+            0 => __DIR__ . '/..' . '/aura/sqlquery/src',
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Google_AccessToken_Revoke' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_AccessToken_Verify' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_AuthHandler_AuthHandlerFactory' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_AuthHandler_Guzzle6AuthHandler' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_AuthHandler_Guzzle7AuthHandler' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Client' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Collection' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Exception' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Http_Batch' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Http_MediaFileUpload' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Http_REST' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Model' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Service' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Service_Exception' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Service_Resource' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Task_Composer' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Task_Exception' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Task_Retryable' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Task_Runner' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Utils_UriTemplate' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit760610032df70170a90c0aed4bb902c8::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit760610032df70170a90c0aed4bb902c8::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit760610032df70170a90c0aed4bb902c8::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6f3378bcf9ae8c70fa733296c713683a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6f3378bcf9ae8c70fa733296c713683a::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6f3378bcf9ae8c70fa733296c713683a::$classMap;
 
         }, null, ClassLoader::class);
     }

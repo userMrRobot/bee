@@ -2,10 +2,10 @@
 <?php
 session_start();
 var_dump($_SESSION);
-require '../function.php';
-require '../config/config.php';
+//require '../function.php';
+//require '../config/config.php';
 
-require TPL . '/header.tpl.php';
+require INCS . '/header.tpl.php';
 
 ?>
 
@@ -19,29 +19,25 @@ require TPL . '/header.tpl.php';
 
         <div class="row">
             <!-- секция с видео -->
-            <div class="col-md-12">
-                <div style="padding:10px; font-size:30px; text-align:center; color: #000306">
-                    <img src="../../../public/img/pexels-chuanyu2015-209658-2231469.jpg" width="auto" height="500px" alt="">
-                </div>
-            </div>
+            <?php require INCS . '/fon.tpl.php'; ?>
             <!-- секция с формой статическая-->
             <div class="col-lg-3">
                 <div class="left-bar">
                     <div class="form-osnova">
                         <div class="header-form"><h4 style="color: #000306;">Вход в акаунт</h4></div>
 
-                        <form action="../../controllers/login.php" method="post" class="forma-osn">
+                        <form action="/login" method="POST" class="forma-osn">
                             <div class="form-group">
                                 <label class="label-form" for="exampleInputEmail1">Введите логин</label>
-                                <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                <input type="text" name="login" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
                             </div>
                             <div class="form-group">
                                 <label class="label-form" for="exampleInputPassword1">Введите пароль</label>
-                                <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                                <input type="password" name="pass" class="form-control" id="exampleInputPassword1">
                             </div>
                             <div class="button-link">
                                 <button type="submit" class="btn btn-success btn-reg">Войти</button>
-                                <a type="submit" href="../../controllers/register.php" class="btn btn-success btn-a btn-reg">Регестрируй</a>
+                                <a type="submit" href="/register" class="btn btn-success btn-a btn-reg">Регестрируй</a>
                             </div>
                             <div class="reg">
                                 <p>нет акаунта?скорее </p>
@@ -104,31 +100,50 @@ require TPL . '/header.tpl.php';
                 <div class="col-lg-4 offset-lg-4">
                     <div class="form-register">
                         <div class="header-form"><h4 style="color: #000306;">Регистрация нового пользователя</h4></div>
-                        <!--                Уведомление-->
-                        <?php if(!empty($_SESSION['warn']) and $_SESSION['warn'] == 'danger'): ?>
-                        <div class="alert alert-<?php echo $_SESSION['warn']?> " role="alert">
-                            Этот логин уже занят
-                            <?php unset($_SESSION['warn']) ?>
-                        </div>
-                        <?php elseif (!empty($_SESSION['warn']) and $_SESSION['warn'] == 'warning'): ?>
-                            <div class="alert alert-<?php echo $_SESSION['warn']?> " role="alert">
-                                Другая ошибка
-                                <?php unset($_SESSION['warn']) ?>
+
+
+<!--                Сообщение о логровании-->
+
+                        <?php if(!empty($_SESSION['login_eror'])): ?>
+                            <div class="alert alert-danger" role="alert">
+                                <?= getRecordInSession('login_eror')?>
+                                <?php delMess('login_eror'); ?>
                             </div>
                         <?php endif; ?>
-                        <form action="../../controllers/register.php" method="post" class="forma-osn">
+<!-- Сообщение Логин занят-->
+                        <?php if(!empty($_SESSION['login_busy'])): ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?= getRecordInSession('login_busy')?>
+                            <?php delMess('login_busy'); ?>
+                        </div>
+                        <?php endif; ?>
+<!-- Сообщение Ошибка регистрации-->
+                        <?php if (!empty($_SESSION['register_eror'])): ?>
+                            <div class="alert alert-danger" role="alert">
+                                <?php echo getRecordInSession('register_eror')?>
+                                <?php delMess('register_eror'); ?>
+                            </div>
+                        <?php endif; ?>
+
+<!-- Сообщение Ошибка Валидации данных-->
+                        <?php if (!empty($_SESSION['login_eror_validate'])): ?>
+                            <div class="alert alert-danger" role="alert">
+                                <?php echo getRecordInSession('login_eror_validate')?>
+                                <?php delMess('login_eror_validate'); ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <form action="/register" method="post" class="forma-osn">
                             <div class="form-group">
                                 <label class="label-form" for="exampleInputEmail1">Введите логин</label>
                                 <input type="text" name="login" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
                             </div>
                             <div class="form-group">
                                 <label class="label-form" for="exampleInputPassword1">Введите пароль</label>
-                                <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                                <input type="password" name="pass" class="form-control" id="exampleInputPassword1">
                             </div>
-                            <div class="form-group">
-                                <label class="label-form" for="exampleInputEmail1">Введите НикНейм</label>
-                                <input type="text" name="nameNik" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
-                            </div>
+
+
                             <div class="button-link button-reg">
                                 <button type="submit" class="btn btn-success btn-reg">Зарегестрировать акаунт</button>
 
@@ -147,5 +162,5 @@ require TPL . '/header.tpl.php';
 
 <?php
 //footer
-require TPL .  '/footer.tpl.php';
+require INCS .  '/footer.tpl.php';
 ?>

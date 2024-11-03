@@ -1,14 +1,17 @@
 <?php
 session_start();
-require 'function.php';
-require 'config/config.php';
-var_dump($_SESSION);
+if(isset($_SESSION['user'])){
+    header('location: /lk');
+}
+dump($_SESSION);
 
 
+
+$title = 'Главная страница';
 
 //main
 
-require VIEW . '/index.view.php';
+require ALL . '/index.view.php';
 
 
 

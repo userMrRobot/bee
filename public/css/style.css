@@ -1,6 +1,19 @@
 body{
     background-color: rgb(255,237,194);
 }
+.fon-vrap{
+    height: 400px;
+    width: 100%;
+    padding:50px 10px;
+
+
+    background-position: 0 0;
+    background-size:  100%;
+    background-repeat: no-repeat;
+
+    background-image: url('../img/beeFon.jpg');
+
+}
 .navbar-nav .dropdown-menu{
     right: 0;
     left: auto;
@@ -229,4 +242,29 @@ margin-top: 30px;
     color: rgb(25,135,84);
     background-color: rgb(239,216,168);
 }
+.fon-vrap{
+    height: 400px;
+    width: 100%;
+    padding:50px 10px; 
+   
+    
+    background-position: 0 0;
+    background-size:  100%;
+    background-repeat: no-repeat;
+    
+    background-image: url('/public/img/beeFon.jpg');
+     
+}
+
 /* замена пароля */
+/* страница пополнения */
+.pay-header{
+    margin-bottom: 100px;
+}
+/* страница пополнения */
+@media (max-width: 480px)
+{
+.stata{
+    margin-top: 500px;
+}
+}
