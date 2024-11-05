@@ -6,45 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit6f3378bcf9ae8c70fa733296c713683a
 {
-    public static $files = array (
-        '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
-        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
         'c' => 
         array (
             'classes\\' => 8,
-        ),
-        'Y' => 
-        array (
-            'YooKassa\\Validator\\' => 19,
-            'YooKassa\\' => 9,
-        ),
-        'P' => 
-        array (
-            'Psr\\Log\\' => 8,
-        ),
-        'K' => 
-        array (
-            'Kint\\' => 5,
-        ),
-        'F' => 
-        array (
-            'FastRoute\\' => 10,
-        ),
-        'D' => 
-        array (
-            'Ds\\' => 3,
-            'Delight\\Http\\' => 13,
-            'Delight\\Db\\' => 11,
-            'Delight\\Cookie\\' => 15,
-            'Delight\\Base64\\' => 15,
-            'Delight\\Auth\\' => 13,
-        ),
-        'A' => 
-        array (
-            'Aura\\SqlQuery\\' => 14,
         ),
     );
 
@@ -52,54 +17,6 @@ class ComposerStaticInit6f3378bcf9ae8c70fa733296c713683a
         'classes\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core/classes',
-        ),
-        'YooKassa\\Validator\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/yoomoney/yookassa-sdk-validator/src',
-        ),
-        'YooKassa\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/yoomoney/yookassa-sdk-php/lib',
-        ),
-        'Psr\\Log\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/log/src',
-        ),
-        'Kint\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kint-php/kint/src',
-        ),
-        'FastRoute\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
-        ),
-        'Ds\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/php-ds/php-ds/src',
-        ),
-        'Delight\\Http\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/delight-im/http/src',
-        ),
-        'Delight\\Db\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/delight-im/db/src',
-        ),
-        'Delight\\Cookie\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/delight-im/cookie/src',
-        ),
-        'Delight\\Base64\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/delight-im/base64/src',
-        ),
-        'Delight\\Auth\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/delight-im/auth/src',
-        ),
-        'Aura\\SqlQuery\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/aura/sqlquery/src',
         ),
     );
 
